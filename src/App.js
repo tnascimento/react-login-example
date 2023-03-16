@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Login from "./Login";
+import Header from "./Header";
 
-function App() {
+const App = () => {
+  const [logado, setLogado] = React.useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header logado={logado} setLogado={setLogado} />
+      <h3>Bem vindo</h3>
+      <Login logado={logado} setLogado={setLogado} />
     </div>
   );
-}
+};
 
 export default App;
