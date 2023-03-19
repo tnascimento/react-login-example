@@ -12,7 +12,7 @@ const Header = ({ logado, setLogado }) => {
         <li>Item de Menu 2</li>
         <li>
           <a href="#" onClick={logout}>
-            Sair
+            Logout
           </a>
         </li>
       </ul>
